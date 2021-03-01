@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Add Your Project</title>
+  </head>
+  <body>
+    <h1 class="display-5 m-4 text-primary">ADD YOUR PROECT</h1>
+    <div class="container">
+      <form method="POST" action="/compose" id="form">
+        <div class="mb-3">
+          <label class="form-label">AUTHOR</label>
+          <input type="text" class="form-control" name="username" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">REGISTRATION NUMBER</label>
+          <input type="number" class="form-control" name="registrationNumber" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">EMAIL ADDRESS</label>
+          <input type="email" class="form-control" name="email" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">PROJECT TITLE</label>
+          <input type="text" class="form-control" name="title" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">PROJECT LINK (GITHUB) </label>
+          <input type="url" class="form-control" name="link" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">PROJECT DESCRIPTION (optional) </label>
+          <textarea
+            class="form-control"
+            placeholder="Leave a comment here"
+            id="floatingTextarea"
+            name="description"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" id="submit__btn">
+          ADD PROJECT
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

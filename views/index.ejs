@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    Home page
+    <a href="compose">ADD YOUR PROJECT</a>
+    <section class="projects">
+      <% projects.forEach(function(project){ %>
+      <div>
+      <h1><%= project.name %></h1>
+      <p><%= project.email %></p>
+      <p><%= project.registrationNumber %></p>
+      <p><%= project.title %></p>
+      <p><%= project.link %></p>
+      <p><%= project.description %></p>
+      </div>
+      <% }) %>
+    </section>
+  </body>
+</html>
